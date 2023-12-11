@@ -1,7 +1,7 @@
 <script>
 
 export default {
-    name: AppMain1,
+    name: "AppMain1",
 }
 
 

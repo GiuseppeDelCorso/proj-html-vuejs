@@ -5,10 +5,13 @@ import AppMain2 from './components/AppMain2.vue'
 import AppFooter from './components/AppFooter.vue'
 
 export default {
-  AppHeader,
-  AppMain1,
-  AppMain2,
-  AppFooter,
+  components: {
+    AppHeader,
+    AppMain1,
+    AppMain2,
+    AppFooter,
+
+  }
 
 }
 </script>
@@ -21,7 +24,7 @@ export default {
     <AppMain1 />
   </section>
   <section>
-    <AppMain1 />
+    <AppMain2 />
   </section>
   <section>
     <AppFooter />
