@@ -99,8 +99,8 @@ export default {
             </div>
         </div>
     </div>
-    <div class="container bgjubo2">
-        <div class="row">
+    <div class="container bgjubo2 mb-5">
+        <div class="row ">
             <div class="col-12">
                 <h1 class="styleTextJubo2">Limitless learning,<br> more possibilities</h1>
                 <p class="styleParagrafJubo2">Online courses open the opportunity for learning to almost anyone, <br>
