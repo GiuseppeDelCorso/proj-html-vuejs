@@ -35,7 +35,7 @@ export default {
         <p class="px-2 fs-7 colorInfoText">Course</p>
         <p class="px-2 fs-7 colorInfoText">Demos</p>
       </div>
-      <div class="col-2">
+      <div class="col-2 d-flex">
         <i class="fa-brands fa-facebook px-2 fs-7 colorInfoText"></i>
         <i class="fa-brands fa-twitter px-2 fs-7 colorInfoText"></i>
         <i class="fa-brands fa-instagram px-2 fs-7 colorInfoText"></i>
@@ -45,7 +45,7 @@ export default {
     <hr>
     <div class="row">
       <div class="col-2">
-        <img class="imgStyle " src="../assets/MasterStudy.svg" alt="">
+        <img class="imgStyle " src="../../public/img/MasterStudy.svg" alt="">
       </div>
       <div class="col-4 d-flex">
         <div class="input-group mb-4">
@@ -78,13 +78,13 @@ export default {
           <p class="fs-7">For Enterprise</p>
         </div>
       </div>
-      <div class="col-3 d-flex">
+      <div class="col-3 d-flex justify-content-end">
         <div class="d-flex align-items-center">
           <i class="fa-regular fa-user fs-7 pb-3 px-2 colorInfoText"></i>
           <p class="fs-7">Log In</p>
         </div>
         <div class="d-flex align-items-center mb-3 px-3">
-          <button class="styleButton">SIGN UP</button>
+          <button class="styleButton ">SIGN UP</button>
         </div>
         <div class="d-flex align-items-center mb-3 fs-4">
           <i class="fa-regular fa-heart"></i>
@@ -97,23 +97,23 @@ export default {
       <div class="col-12 d-flex justify-content-center">
         <div class="d-flex pt-3  mx-3">
           <i class="fa-solid fa-chart-simple px-2 pt-1"></i>
-          <p class="">Buisness</p>
+          <p class="fs-7">Buisness</p>
         </div>
         <div class="d-flex pt-3 mx-3">
           <i class="fa-solid fa-palette px-2 pt-1"></i>
-          <p class="">Desing</p>
+          <p class="fs-7">Desing</p>
         </div>
         <div class="d-flex pt-3 mx-3">
           <i class="fa-solid fa-gear px-2 pt-1"></i>
-          <p class="">Development</p>
+          <p class="fs-7">Development</p>
         </div>
         <div class="d-flex pt-3 mx-3">
           <i class="fa-solid fa-face-smile px-2 pt-1"></i>
-          <p class="">Life Style</p>
+          <p class="fs-7">Life Style</p>
         </div>
         <div class="d-flex pt-3 mx-3">
           <i class="fa-solid fa-envelopes-bulk px-2 pt-1"></i>
-          <p class="">Office Productivity</p>
+          <p class="fs-7">Office Productivity</p>
         </div>
       </div>
     </div>
@@ -131,7 +131,7 @@ export default {
 }
 
 .fs-7 {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .fs-8 {
@@ -164,5 +164,6 @@ export default {
   height: 50px;
   width: 90px;
   border-radius: 25px;
+  font-size: 14px;
 }
 </style>
