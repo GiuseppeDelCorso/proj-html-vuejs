@@ -5,6 +5,7 @@ import AppMain1 from './components/AppMain1.vue'
 import AppMain2 from './components/AppMain2.vue'
 import AppMain3 from './components/AppMain3.vue'
 import AppMainCarusel from './components/AppMainCarusel.vue'
+import AppMain4 from './components/AppMain4.vue'
 import AppFooter from './components/AppFooter.vue'
 import Swiper from 'swiper'
 
@@ -16,6 +17,7 @@ export default {
     AppMain2,
     AppMain3,
     AppMainCarusel,
+    AppMain4,
     AppFooter,
     Swiper,
 
@@ -171,6 +173,9 @@ export default {
   </section>
   <section>
     <AppMainCarusel />
+  </section>
+  <section>
+    <AppMain4 />
   </section>
   <section>
     <AppFooter />

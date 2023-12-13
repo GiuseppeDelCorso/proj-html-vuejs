@@ -109,6 +109,20 @@ export default {
                     price: "45$",
                     star: 3
                 },
+                {
+                    img: "838056_611a_3-272x161",
+                    typeCourses: "Development",
+                    infoCourses: "The Complete iOS 10 & Swift 3 Developer Course",
+                    price: "Free",
+                    star: 5
+                },
+                {
+                    img: "895786_7b4b_2-272x161",
+                    typeCourses: "Desing",
+                    infoCourses: "CSS The Complete Guide 2020 (incl. Flexbox, Grid & Sass)",
+                    price: "100$",
+                    star: 3
+                },
 
             ],
         };
@@ -120,7 +134,7 @@ export default {
 
 </script>
 <template>
-    <div class="container mb-4">
+    <div class="container mb-4 bgContainer">
         <div class="row">
             <div class="col-12">
                 <swiper :slidesPerView="6" :spaceBetween="30" :freeMode="true" :pagination="{
@@ -152,6 +166,10 @@ export default {
 </template>
 
 <style scoped>
+.bgContainer {
+    background-color: #f1f4fb;
+}
+
 .mt-6 {
     margin-top: 110px;
 }
