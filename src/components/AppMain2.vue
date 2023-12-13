@@ -22,7 +22,7 @@ export default {
                     <p class="styleinfoCourses">{{ linksCards.infoCourses }}</p>
                     <hr>
                     <div class="d-flex px-3 ">
-                        <i v-for="i in 5" :class="{ 'filled': i <= voteInt }" class="fas fa-star styleStar"></i>
+                        <i v-for="i in 5" :class="{ 'filled': i <= linksCards.star }" class="fas fa-star styleStar"></i>
                         <p class="styleprice">{{ linksCards.price }}</p>
                     </div>
                 </div>
@@ -79,14 +79,15 @@ hr {
     margin-left: 16px;
 }
 
-.filled {
-    color: #ff4450;
-}
 
 .styleStar {
-    color: orange;
+    color: lightgrey;
     font-size: 12px;
     padding: 4px;
+}
+
+.filled {
+    color: orange;
 }
 
 .styleprice {

@@ -4,49 +4,48 @@ export default {
     name: "AppMain1",
     data() {
         return {
-            voteInt: (Math.ceil(this.cardInfo) / 2),
             cardInfo: [
                 {
                     img: "186792_41e4_4-272x161",
                     typeCourses: "Development",
                     infoCourses: "The Complete iOS 10 & Swift 3 Developer Course",
                     price: "Free",
-                    star: "20"
+                    star: 3
                 },
                 {
                     img: "246154_d8b0_3-272x161",
                     typeCourses: "Desing",
                     infoCourses: "CSS The Complete Guide 2020 (incl. Flexbox, Grid & Sass)",
                     price: "100$",
-                    star: 20
+                    star: 4
                 },
                 {
                     img: "1253188_58f7_2-272x161",
                     typeCourses: "Development",
                     infoCourses: "Web Design for Beginners: Real World Coding in HTML & CSS",
                     price: "65$",
-                    star: 20
+                    star: 2
                 },
                 {
                     img: "1414956_d944_15-272x161",
                     typeCourses: "Desing",
                     infoCourses: "Digitally Painting Light and Color: Amateur to Master",
                     price: "70$",
-                    star: 20
+                    star: 3
                 },
                 {
                     img: "1561458_7f3b-272x161",
                     typeCourses: "Art And Crafts",
                     infoCourses: "Become an Arabic Calligraphy Artist from Scratch",
                     price: "199$",
-                    star: 20
+                    star: 5
                 },
                 {
                     img: "1776542_30b1-272x161",
                     typeCourses: "Google",
                     infoCourses: "Google Searching Ninja!",
                     price: "45$",
-                    star: 20
+                    star: 3
                 },
 
             ],
@@ -91,7 +90,7 @@ export default {
                         <p class="styleinfoCourses">{{ card.infoCourses }}</p>
                         <hr>
                         <div class="d-flex px-3 ">
-                            <i v-for="i in 5" :class="{ 'filled': i <= voteInt }" class="fas fa-star styleStar"></i>
+                            <i v-for="i in 5" :class="{ 'filled': i <= card.star }" class="fas fa-star styleStar"></i>
                             <p class="styleprice">{{ card.price }}</p>
                         </div>
                     </div>
@@ -161,14 +160,16 @@ hr {
     margin-left: 16px;
 }
 
-.filled {
-    color: #ff4450;
-}
 
 .styleStar {
-    color: orange;
+    color: lightgray;
     font-size: 12px;
     padding: 4px;
+    border-color: black;
+}
+
+.filled {
+    color: orange;
 }
 
 .styleprice {

@@ -12,7 +12,7 @@ export default {
       <div class="col-6">
 
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+          <button class="btn btn-secondary dropdown-toggle styleLengage" type="button" id="dropdownMenuButton2"
             data-bs-toggle="dropdown" aria-expanded="false">
             English
           </button>
@@ -124,6 +124,12 @@ export default {
 .bgContainerBlack {
   background-color: #263144;
   color: white;
+}
+
+.styleLengage {
+  background-color: white;
+  color: #b3b2b3;
+  border: none;
 }
 
 .colorInfoText {
